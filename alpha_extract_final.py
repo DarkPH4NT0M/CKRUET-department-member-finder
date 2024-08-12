@@ -124,8 +124,9 @@ elif choice == '2':
     with open(output_file_path, 'w') as output_file:
         for line in output_lines:
             output_file.write(line + "\n")
-
-    print(f"Department-wise allocation saved as {output_file_path}")
+        output_file.write("\033[92mCode Credit: Ragib Rownak [MTE-RUET'23]\033[0m")
+    print(f"Department-wise allocation saved as {output_file_path} \n")
+    print("\033[92mCode Courtesy: Ragib Rownak [MTE-RUET'23]\033[0m")
 
 else:
     print("Invalid choice. Please run the script again and enter 1 or 2.")
